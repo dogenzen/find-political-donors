@@ -72,3 +72,5 @@ The following data is extracted and stored in memory
 For computing runtime median from a stream requires consideration of insertion time to store the data and computing the median.
 
 Using a max-heap and a min-heap for each combination requires O(log n) time for insertion and O(1) constant time to compute the median.
+
+Since running median is not required for contributions that are aggregated by date, instead of calculating the median by using heaps which overall has O(n log n) complexity, the contributions can be stored in an array and median-of-medians selection algorithm can be used to calculate the median, which will give a slightly better runtime complexity of O(n), if needed. For sake of simplicity, both median computation uses median-by-heap approach.
