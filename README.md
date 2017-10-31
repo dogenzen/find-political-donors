@@ -51,7 +51,7 @@ The code is structured as a set of layered modules, which provides a general fra
 
 ##### Currency computation     
 All the currency computations (additions/averages) are done by converting each number to cents (by multiplying with 100) and storing as `long` values.
-The values are converted back at the end and rounded to whole dollar for reporting.
+The values are converted back and rounded to whole dollars for reporting.
 
 ##### Sorting
 Sorting and aggregation of dates is done using a map of maps.
