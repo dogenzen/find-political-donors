@@ -50,8 +50,8 @@ The directory from which `./run.sh` to be executed *expects* the following direc
 The code is structured as a set of layered modules, which provides a general framework for processing each contribution for any running and aggregate computations. This is achieved with proper abstraction and encapsulation of classes with internal data-structures.
 
 ##### Currency computation     
-Currency computation is done by converting each number to cents (by multiplying with 100) and then storing it as `long`.
-The value is converted back after all additions or averages are computed for reporting and rounded to whole dollar.
+All the currency computations (additions/averages) are done by converting each number to cents (by multiplying with 100) and storing as `long` values.
+The values are converted back at the end and rounded to whole dollar for reporting.
 
 ##### Sorting
 Sorting and aggregation of dates is done using a map of maps.
